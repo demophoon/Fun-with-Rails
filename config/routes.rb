@@ -55,5 +55,9 @@ Rails.application.routes.draw do
   #   end
 
   root 'name#home'
-  get ':name' => 'name#index'
+  get '/name/:name' => 'name#index'
+
+  get '/lead/create' => 'lead#create'
+
+  get '/thank_you' => 'thank_you#index'
 end
